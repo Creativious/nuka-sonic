@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "nuka-sonic-screwdriver",
+  "version": "${version}",
+  "name": "nuka-sonic-screwdriver",
+  "description": "",
+  "authors": [
+    "Creativious",
+    "Noach05"
+  ],
+  "contact": {
+    "repo": "https://github.com/creativious/nuka-sonic-screwdriver"
+  },
+  "license": "MIT",
+  "icon": "assets/nuka-sonic-screwdriver/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.creativious.nukasonicscrewdriver.client.Nuka_sonic_screwdriverClient"
+    ],
+    "main": [
+      "net.creativious.nukasonicscrewdriver.Nuka_sonic_screwdriver"
+    ]
+  },
+  "mixins": [
+    "nuka-sonic-screwdriver.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
